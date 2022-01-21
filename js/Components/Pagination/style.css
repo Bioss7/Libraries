@@ -1,0 +1,126 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pages-nav {
+    display: flex;
+}
+
+.pages-nav-count{
+    display: flex;
+    max-width: 400px;
+    overflow: hidden; 
+}
+
+.pages-nav-count-2{
+    display: flex;
+    max-width: 400px;
+    overflow: hidden; 
+}
+
+.pages-nav-pages{
+    display: flex;
+    max-width: 400px;
+}
+
+.pages-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: #000;
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 15px;
+    z-index: 1;
+    
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+.pages-nav__item--active{
+    color: #fff;
+    border-radius: 50%;
+    background-color: #cfa029;
+}
+
+.pages-nav__item:hover{
+    color: #fff;
+    border-radius: 50%;
+    background-color: #cfa029;
+}
+  
+.btn-prev {
+      min-width: 35px;
+      min-height: 35px;
+      margin-right: 15px;
+      z-index: 1;
+      font-size: 0;
+      
+      background-color: #ccc;
+      border-radius: 50%;
+      border: none;
+      transition: all .2 linear;
+  
+      position: relative;  
+}
+
+.btn-prev:hover{
+    background-color: #cfa029;
+}
+
+.btn-prev::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    right: 32%;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%) rotate(225deg);
+}
+  
+.btn-next {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    z-index: 1;
+    font-size: 0;
+    
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+
+    transition: all .2 linear;
+
+    position: relative;
+}
+
+.btn-next:hover{
+    background-color: #cfa029;
+}
+
+.btn-next::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    right: 40%;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.2s;
+}
+
